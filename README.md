@@ -16,56 +16,67 @@ ___
 <h3>Wyszukiwanie selektorów na stronie logowania. Wymień wszystkie elementy, które znajdują się na stronie logowania.</h3>
 
 <h4>1. Login container:</h4>
+
 - //*[@id="__next"]/form/div
 - //*[contains(@class, "MuiPaper-root")]
 - //html/body/div/form/div
 
 <h4>2. Header:</h4>
+
 - //*[@id="__next"]/form/div/div[1]/h5
 - //*[text()="Scouts Panel"]
 - //*[contains(@class, "MuiTypography-gutterBottom")]
 
 <h4>3. Login label:</h4>
+
 - //*[@id="login-label"]
 - //*[text()="Login"]
 - //html/body/div/form/div/div/div[1]/label
 
 <h4>4. Login input:</h4>
+
 - //*[@id="login"]
 - //*[@name="login"]
 - //html/body/div/form/div/div/div[1]/div/input
 
 <h4>5. Password label:</h4>
+
 - //*[@id="password-label"]
 - //*[text()="Password"]
 - //html/body/div/form/div/div/div[2]/label
 
 <h4>6. Password input:</h4>
+
 - //*[@id="password"]
 - //*[@name="password"]
 - //html/body/div/form/div/div/div[2]/div/input
 
 <h4>7. Remind password:</h4> 
+
 - //*[@id="__next"]/form/div/div[1]/a
 - //*[text()="Remind password"]
 - /html/body/div/form/div/div[1]/a
 
 <h4>8. Language selector:</h4>
+
 - //*[@id="__next"]/form/div/div[2]/div/div
 - //html/body/div/form/div/div[2]/div/div
 - //*[@aria-haspopup="listbox"]
 
 <h4>9. Language dropdown options list - ENGLISH:</h4>
+
 - //*[@id="menu-"]/div[3]/ul/li[2]
 - //*[@data-value="en"]
 - //html/body/div[2]/div[3]/ul/li[2]
 
 <h4>10. Language dropdown options list - POLISH:</h4>
+
 - //*[@id="menu-"]/div[3]/ul/li[1]
 - //*[@data-value="pl"]
 - //html/body/div[2]/div[3]/ul/li[1]
 
 <h4>11. Sign in button:</h4>
+
 - //*[@id="__next"]/form/div/div[2]/button/span[1]
 - //*[text()="Sign in"]
 - //html/body/div/form/div/div[2]/button/span[1]
