@@ -21,11 +21,26 @@ class TestLoginPage(unittest.TestCase):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.type_in_email('user01@getnada.com')
+        time.sleep(1)
         user_login.type_in_password('Test-1234')
+        time.sleep(1)
         user_login.click_on_sign_in()
+        time.sleep(1)
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
-        time.sleep(5)
+
+    def test_log_in_to_the_system_invalid_data(self):
+        user_login = LoginPage(self.driver)
+        user_login.title_of_page()
+        user_login.type_in_email('user01@getnada.com')
+        time.sleep(1)
+        user_login.type_in_password('Test-12345678')
+        time.sleep(1)
+        user_login.click_on_sign_in()
+        time.sleep(2)
+        user_login.main_title_verification()
+        time.sleep(4)
+
 
     @classmethod
     def tearDown(self):

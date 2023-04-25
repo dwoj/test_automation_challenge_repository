@@ -17,6 +17,7 @@ class AddPlayer(BasePage):
     height_input_xpath = "//div[6]/div/div/input"
     age_input_xpath = "//div[7]/div/div/input"
     leg_xpath = "//*[@id='mui-component-select-leg']"
+    right_leg_xpath = "//li[1]"
     club_input_xpath = "//div[9]/div/div/input"
     level_input_xpath = "//div[10]/div/div/input"
     main_position_input_xpath = "//div[11]/div/div/input"
@@ -28,7 +29,34 @@ class AddPlayer(BasePage):
     clear_button_xpath = "//button[2]/span[1]"
     add_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
     expected_page_title = "Add player"
+    successful_added_message_xpath = "//*[@id='7duxo8ru3f']/div[1]"
+    expected_successful_added_message = "Added player."
 
     def title_of_add_player_page(self):
         time.sleep(5)
         assert self.get_page_title(self.add_player_url) == self.expected_page_title
+
+    def type_in_name(self, name):
+        self.field_send_keys(self.name_input_xpath, name)
+
+    def type_in_surname(self, surname):
+        self.field_send_keys(self.surname_input_xpath, surname)
+
+    def type_in_age(self, age):
+        self.field_send_keys(self.age_input_xpath, age)
+
+    def click_on_leg_field(self):
+        self.click_on_the_element(self.leg_xpath)
+
+    def click_on_right_leg(self):
+        self.click_on_the_element(self.right_leg_xpath)
+
+    def type_in_main_position(self, main_position):
+        self.field_send_keys(self.main_position_input_xpath, main_position)
+
+    def click_on_submit_button(self):
+        self.click_on_the_element(self.submit_button_xpath)
+
+    def click_on_clear_button(self):
+        self.click_on_the_element(self.clear_button_xpath)
+

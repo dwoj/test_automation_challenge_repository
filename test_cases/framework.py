@@ -1,6 +1,7 @@
 import os
 import unittest
 from selenium import webdriver
+
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
@@ -41,6 +42,7 @@ class TestMediumPage(unittest.TestCase):
 
     def get_page_title(self, url):
         return self.driver.title
+
 
     @classmethod
     def tearDown(self):
