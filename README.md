@@ -80,3 +80,6 @@ ___
 - //*[@id="__next"]/form/div/div[2]/button/span[1]
 - //*[text()="Sign in"]
 - //html/body/div/form/div/div[2]/button/span[1]
+
+# Zadanie 4: Link do dysku Google:
+https://drive.google.com/drive/folders/1SyrtY0jPuR-OUpNNUZIxLfqwhrJbsQEK?usp=sharing
