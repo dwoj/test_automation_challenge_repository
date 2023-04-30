@@ -1,5 +1,4 @@
 import os
-import time
 import unittest
 from selenium import webdriver
 
@@ -19,9 +18,9 @@ class TestChangeLanguage(unittest.TestCase):
     def test_change_language(self):
         user_login = LoginPage(self.driver)
         user_login.select_language("english")
-        time.sleep(3)
         user_login.select_language("polski")
-        time.sleep(3)
+        user_login.assert_sign_in_button_eng()
+
 
 
 

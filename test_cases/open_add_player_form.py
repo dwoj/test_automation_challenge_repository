@@ -1,5 +1,4 @@
 import os
-import time
 import unittest
 from selenium import webdriver
 
@@ -24,7 +23,7 @@ class TestAddPlayerForm(unittest.TestCase):
         user_login.type_in_password('Test-1234')
         user_login.click_on_sign_in()
         dashboard_page = Dashboard(self.driver)
-        time.sleep(4)
+        dashboard_page.wait_for_dashboard_view()
         dashboard_page.click_on_add_player()
         add_player_page = AddPlayer(self.driver)
         add_player_page.title_of_add_player_page()

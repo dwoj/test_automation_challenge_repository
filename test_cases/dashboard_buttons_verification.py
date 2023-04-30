@@ -1,5 +1,4 @@
 import os
-import time
 import unittest
 from selenium import webdriver
 
@@ -20,30 +19,23 @@ class TestDashboardButtons(unittest.TestCase):
     def test_language_selector(self):
         user_login = LoginPage(self.driver)
         user_login.type_in_email('user01@getnada.com')
-        time.sleep(1)
         user_login.type_in_password('Test-1234')
-        time.sleep(1)
         user_login.click_on_sign_in()
         dashboard_page = Dashboard(self.driver)
-        time.sleep(5)
+        dashboard_page.wait_for_dashboard_view()
         dashboard_page.click_on_language_selector()
-        time.sleep(2)
-        dashboard_page.click_on_language_selector()
-        time.sleep(2)
+        dashboard_page.assert_main_page_pl()
 
     def test_sign_out_button(self):
         user_login = LoginPage(self.driver)
         user_login.type_in_email('user01@getnada.com')
-        time.sleep(1)
         user_login.type_in_password('Test-1234')
-        time.sleep(1)
         user_login.click_on_sign_in()
         dashboard_page = Dashboard(self.driver)
-        time.sleep(6)
+        dashboard_page.wait_for_dashboard_view()
         dashboard_page.click_on_sign_out()
-        time.sleep(2)
+        user_login.wait_for_login_page_view()
         user_login.main_title_verification()
-        time.sleep(2)
 
     @classmethod
     def tearDown(self):

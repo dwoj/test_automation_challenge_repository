@@ -9,6 +9,7 @@ class AddPlayer(BasePage):
     players_button_xpath = "//ul[1]/div[2]/div[2]/span"
     language_button_xpath = "//ul[2]/div[1]/div[2]/span"
     sign_out_button_xpath = "//ul[2]/div[2]/div[2]/span"
+    main_page_title_xpath = "//form/div[1]/div/span"
     email_input_xpath = "//div[1]/div/div/input"
     name_input_xpath = "//div[2]/div/div/input"
     surname_input_xpath = "//div[3]/div/div/input"
@@ -29,8 +30,8 @@ class AddPlayer(BasePage):
     clear_button_xpath = "//button[2]/span[1]"
     add_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
     expected_page_title = "Add player"
-    successful_added_message_xpath = "//*[@id='7duxo8ru3f']/div[1]"
-    expected_successful_added_message = "Added player."
+    required_field_message_xpath = "//div[11]/div/p"
+    expected_required_field_message = "Required"
 
     def title_of_add_player_page(self):
         time.sleep(5)
@@ -59,4 +60,10 @@ class AddPlayer(BasePage):
 
     def click_on_clear_button(self):
         self.click_on_the_element(self.clear_button_xpath)
+
+    def click_on_main_page_button(self):
+        self.click_on_the_element(self.main_page_button_xpath)
+
+    def assert_required_field(self):
+        self.assert_element_text(self.driver, self.required_field_message_xpath, self.expected_required_field_message)
 

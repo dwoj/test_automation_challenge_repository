@@ -12,11 +12,11 @@ class LoginPage(BasePage):
     expected_title = "Scouts panel - sign in"
     english_option = "//li[1]"
     polish_option = "//li[2]"
-    expected_title_password_eng = "Password"
-    expected_title_password_pl = "Hasło"
     expected_main_title = "Scouts Panel"
     login_error_xpath = "//div[3]/span"
     expected_error_login = "Please provide your username or your e-mail."
+    expected_sign_in_button_eng = "SIGN IN"
+    expected_sign_in_button_pl = "ZALOGUJ"
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -43,5 +43,14 @@ class LoginPage(BasePage):
 
     def error_message_verification(self):
         self.assert_element_text(self.driver, self.login_field_xpath, self.expected_error_login)
+
+    def wait_for_login_page_view(self):
+        self.wait_for_element_to_be_clickable(self.login_field_xpath)
+
+    def assert_sign_in_button_eng(self):
+        self.assert_element_text(self.driver,self.sign_in_button_xpath, self.expected_sign_in_button_eng)
+
+    def assert_sign_in_button_pl(self):
+        self.assert_element_text(self.driver,self.sign_in_button_xpath, self.expected_sign_in_button_pl)
 
 

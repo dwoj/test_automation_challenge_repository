@@ -26,8 +26,9 @@ class Dashboard(BasePage):
     last_updated_report_button_xpath = "//a[5]/button/span[1]"
     expected_title = "Scouts panel"
     dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
-    expected_main_page_title = "Strona Główna"
-
+    expected_last_created_player = "JAN NOWAK"
+    expected_main_page_pl = "Strona główna"
+    expected_main_page_eng = "Main page"
 
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.title_bar_header_xpath)
@@ -44,5 +45,17 @@ class Dashboard(BasePage):
 
     def main_page_button_verification(self):
         self.assert_element_text(self.driver, self.main_page_button_xpath, self.expected_main_page_title)
+
+    def wait_for_dashboard_view(self):
+        self.wait_for_element_to_be_clickable(self.main_page_button_xpath)
+
+    def assert_created_player(self):
+        self.assert_element_text(self.driver, self.last_created_player_button_xpath, self.expected_last_created_player)
+
+    def assert_main_page_pl(self):
+        self.assert_element_text(self.driver, self.main_page_button_xpath, self.expected_main_page_pl)
+
+    def assert_main_page_eng(self):
+        self.assert_element_text(self.driver, self.main_page_button_xpath, self.expected_main_page_eng)
 
 
