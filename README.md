@@ -81,13 +81,15 @@ ___
 - //*[text()="Sign in"]
 - //html/body/div/form/div/div[2]/button/span[1]
 
-# Zadanie 4: Przypadki testowe - link do dysku Google:
+# Zadanie 4: Przypadki testowe
 ___
+Link do dysku Google:
 
 - [LINK](https://drive.google.com/drive/folders/1SyrtY0jPuR-OUpNNUZIxLfqwhrJbsQEK?usp=sharing)
 
-# Zadanie 5: Robot framework - link do dodatkowego repozytorium:
+# Zadanie 5: Robot framework
 ___
+Link do dodatkowego repozytorium:
 
 - [LINK](https://github.com/dwoj/panelscout_robotframework_)
 
