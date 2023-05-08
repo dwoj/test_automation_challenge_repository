@@ -1,4 +1,4 @@
-# Zadanie 1: Konfiguracja oprogramowania
+# Zadanie :one:: Konfiguracja oprogramowania
 ___
 <h2>Podzadanie 1:</h2> 
 <h3>"Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?"</h3>
@@ -10,7 +10,7 @@ Cześć, jestem Dominika! :blush: Zdecydowałam się wziąć udział w wyzwaniu,
 Wynik: UDZIELONO ODPOWIEDZI DOBRZE NA 8 Z 14
 
 
-# Zadanie 2: Selektory
+# Zadanie :two:: Selektory
 ___
 <h2>Podzadanie 2:</h2> 
 <h3>Wyszukiwanie selektorów na stronie logowania. Wymień wszystkie elementy, które znajdują się na stronie logowania.</h3>
@@ -81,19 +81,23 @@ ___
 - //*[text()="Sign in"]
 - //html/body/div/form/div/div[2]/button/span[1]
 
-# Zadanie 4: Przypadki testowe
+# Zadanie :four:: Przypadki testowe
 ___
 Link do dysku Google:
 
 - [LINK](https://drive.google.com/drive/folders/1SyrtY0jPuR-OUpNNUZIxLfqwhrJbsQEK?usp=sharing)
 
-# Zadanie 5: Robot framework
+# Zadanie :five:: Robot framework
 ___
 Link do dodatkowego repozytorium:
 
 - [LINK](https://github.com/dwoj/panelscout_robotframework_)
 
-# Zadanie 6: Lista błędów, raport z testów oraz portfolio
+# Zadanie :six:: Lista błędów, raport z testów oraz portfolio
+___
+Link do listy błędów + raportu z testów:
 
-- lista błędów + raport z testów: [LINK](https://drive.google.com/drive/folders/1gXjyaQE9HKIeT_Kt9u1ZDNSj-0ANUqPz?usp=share_link)
-- portfolio: [LINK](https://github.com/dwoj/portfolio/blob/main/README.md)
+- [LINK](https://drive.google.com/drive/folders/1gXjyaQE9HKIeT_Kt9u1ZDNSj-0ANUqPz?usp=share_link)
+
+Link do portfolio:
+- [LINK](https://github.com/dwoj/portfolio/blob/main/README.md)
