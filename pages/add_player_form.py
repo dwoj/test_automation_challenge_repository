@@ -28,7 +28,7 @@ class AddPlayer(BasePage):
     add_link_to_youtube_button_xpath = "//div[19]/button/span[1]"
     submit_button_xpath = "//div[3]/button[1]/span[1]"
     clear_button_xpath = "//button[2]/span[1]"
-    add_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
+    add_player_url = "https://scouts.futbolkolektyw.pl/en/players/add"
     expected_page_title = "Add player"
     required_field_message_xpath = "//div[11]/div/p"
     expected_required_field_message = "Required"

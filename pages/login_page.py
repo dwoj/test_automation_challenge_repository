@@ -8,7 +8,7 @@ class LoginPage(BasePage):
     password_field_xpath = "//*[@id='password']"
     language_selector_xpath = "//div[2]/div/div"
     sign_in_button_xpath = "//*[contains(@class, 'MuiButton-label')]"
-    login_url = "https://scouts-test.futbolkolektyw.pl/en/"
+    login_url = "https://scouts.futbolkolektyw.pl/en/"
     expected_title = "Scouts panel - sign in"
     english_option = "//li[1]"
     polish_option = "//li[2]"

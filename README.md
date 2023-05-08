@@ -84,9 +84,14 @@ ___
 # Zadanie 4: Przypadki testowe - link do dysku Google:
 ___
 
-- https://drive.google.com/drive/folders/1SyrtY0jPuR-OUpNNUZIxLfqwhrJbsQEK?usp=sharing
+- [LINK](https://drive.google.com/drive/folders/1SyrtY0jPuR-OUpNNUZIxLfqwhrJbsQEK?usp=sharing)
 
 # Zadanie 5: Robot framework - link do dodatkowego repozytorium:
 ___
 
-- https://github.com/dwoj/panelscout_robotframework_
+- [LINK](https://github.com/dwoj/panelscout_robotframework_)
+
+# Zadanie 6: Lista błędów, raport z testów oraz portfolio
+
+- lista błędów + raport z testów: [LINK](https://drive.google.com/drive/folders/1gXjyaQE9HKIeT_Kt9u1ZDNSj-0ANUqPz?usp=share_link)
+- portfolio: [LINK](https://github.com/dwoj/portfolio/blob/main/README.md)
